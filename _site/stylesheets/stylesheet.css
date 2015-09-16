@@ -1,10 +1,3 @@
-body {
-  background: url("/images/main.jpg") no-repeat center -300px fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
 #navbar-brand {
   color: white;
   border: 2px solid white;
@@ -44,20 +37,25 @@ nav.navbar-custom {
   nav.navbar-custom li.active > a {
     color: white; }
 
-.nav, .pagination, .carousel, .panel-title a {
-  cursor: pointer; }
+#nav-desc-wrapper {
+  background: url("/images/main.jpg") no-repeat center -300px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#home {
+  background: rgba(0, 0, 0, 0.5); }
+  #home #description {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    color: white;
+    padding: 10% 0; }
 
 div#main-content {
   padding: 0; }
-  div#main-content #home {
-    background: rgba(0, 0, 0, 0.5); }
-    div#main-content #home #description {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 900px;
-      color: white;
-      padding: 10% 0; }
   div#main-content .page-section {
     margin: 0;
     padding: 100px 30px;

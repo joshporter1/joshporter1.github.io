@@ -1,14 +1,6 @@
 ---
 ---
 
-body {
-    background: url('/images/main.jpg') no-repeat center -300px fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 #navbar-brand{
   color: white;
   border: 2px solid white;
@@ -59,24 +51,29 @@ nav.navbar-custom {
   }
 }
 
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+#nav-desc-wrapper {
+  background: url('/images/main.jpg') no-repeat center -300px fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+#home {
+  background: rgba(0,0,0,.5);
+
+  #description {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    color: white;
+    padding: 10% 0;
+  }
+}
 
 div#main-content{
   padding: 0;
-
-  #home {
-    background: rgba(0,0,0,.5);
-
-    #description {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 900px;
-      color: white;
-      padding: 10% 0;
-    }
-  }
 
   .page-section {
     margin: 0;
