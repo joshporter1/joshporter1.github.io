@@ -1,20 +1,45 @@
 ---
 ---
 
+// general
+
+.btn-border {
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 15px 25px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    background: white;
+    color: black;
+    -webkit-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -moz-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -ms-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -o-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+// navbar
+
 #navbar-brand{
   color: white;
   border: 2px solid white;
   height: auto;
-  margin: 10px 5px;
+  margin: 15px 5px 0 15px;
   font-size: 25px;
   font-weight: 100;
-  line-height: 25px;
-  margin-left: 15px;
-  margin-top: 15px;
+  line-height: 20px;
 }
 
 nav.navbar-custom {
-  background: rgba(0,0,0,.5);
   margin-bottom: 0;
 
   li {
@@ -27,7 +52,7 @@ nav.navbar-custom {
       color: rgba(255,255,255,.8);
       padding: 15px;
     }
-    :hover {
+    a:hover {
      background: transparent;
      color: white;
      -webkit-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
@@ -41,7 +66,7 @@ nav.navbar-custom {
     border: 2px solid white;
     margin-right: 30px;
 
-    :hover {
+    a:hover {
      background: white;
      color: black;
     }
@@ -51,24 +76,59 @@ nav.navbar-custom {
   }
 }
 
-#nav-desc-wrapper {
-  background: url('/images/main.jpg') no-repeat center -300px fixed; 
+// main header
+
+#main-header {
+  background: url('/images/main.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  #header-overlay {
+    background: rgba(0,0,0,.5);
+
+  }
 }
 
-#home {
-  background: rgba(0,0,0,.5);
+// home/banner section
 
-  #description {
+#home {
+  #description-wrapper {
     text-align: center;
     margin: 0 auto;
     width: 100%;
     max-width: 900px;
     color: white;
-    padding: 10% 0;
+    padding: 15% 0;
+
+    #description {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px  5px;
+      border: 2px solid white;
+
+      #sub-headline {
+        font-size: 18px;
+        font-style: italic;
+        font-family: "Georgia, serif";
+      }
+
+      #headline {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 20px;
+        margin: 25px;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+
+      .header-btn {
+        margin: 0 15px;
+        display: inline-block;
+        width: 30%
+      }
+    }
   }
 }
 
