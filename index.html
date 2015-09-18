@@ -7,13 +7,12 @@
 
   <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"> -->
 
   <title>Josh Porter | Developer</title>
 </head>
 
 <body>
-  
+
   <header id="main-header">
     <div id="header-overlay">
       <!-- main navbar -->
@@ -21,11 +20,15 @@
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span class="icon-bar">-</span>
+              <span class="icon-bar">-</span>
+              <span class="icon-bar">-</span>
             </button>
-            <a class="navbar-brand" href="#" id="navbar-brand"><b>Josh Porter</b> | Developer</a>
+            <a class="navbar-brand" href="#" id="navbar-brand">
+              <span class="hidden-xs hidden-sm"><b>Josh Porter</b> | Developer</span>
+              <span class="visible-sm-inline"><b>Josh Porter</b> | Dev</span>
+              <span class="visible-xs-inline">J | P</span>
+            </a>
           </div>
 
           <!-- main navbar items -->
@@ -40,8 +43,21 @@
           </div>
       </nav>
 
-      <div id="home">
-        <div id="description-wrapper">
+      <div id="home" class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 text-center" id="description-wrapper">
+          <h4 id="sub-headline">Software Developer specializing in</h4>
+          <h1 class="headline hidden-sm hidden-xs">Ruby on Rails</h1>
+          <h2 class="headline visible-sm-block">Ruby on Rails</h2>
+          <h3 class="headline visible-xs-block">Ruby on Rails</h3>
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-xs-8 col-xs-offset-2">
+              <a href="#" class="btn btn-custom btn-lg header-btn pull-left">Resume</a>
+              <a href="#" class="btn btn-custom btn-lg header-btn pull-right">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="description-wrapper">
           <div id="description">
             <h4 id="sub-headline">Software Developer specializing in</h4>
             <h1 id="headline">Ruby on Rails</h1>
@@ -50,14 +66,14 @@
               <a href="#" class="btn-border header-btn">Contact</a>
             </p>
           </div>
-        </div>
+        </div> -->
       </div>  
     </div>
-  </div>  
+  </header>  
 
 
 
-  <div class="container-fluid" id="main-content">
+  <div id="main-content">
     <section class="page-section" id="about">
       <h3>About</h3>
       <p>

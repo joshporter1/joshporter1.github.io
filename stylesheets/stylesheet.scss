@@ -3,12 +3,12 @@
 
 // general
 
-.btn-border {
+.btn-custom {
   border: 2px solid white;
+  border-radius: 0;
   color: white;
   font-size: 16px;
   font-weight: 200;
-  padding: 15px 25px;
   text-decoration: none;
 
   &:hover {
@@ -92,42 +92,36 @@ nav.navbar-custom {
 }
 
 // home/banner section
-
 #home {
   #description-wrapper {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 900px;
     color: white;
-    padding: 15% 0;
+    border: 2px solid white;
+    padding: 20px  5px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
-    #description {
-      width: 50%;
-      margin: 0 auto;
-      padding: 20px  5px;
-      border: 2px solid white;
+    #sub-headline {
+      font-size: 18px;
+      font-style: italic;
+      font-family: "Georgia, serif";
+    }
 
-      #sub-headline {
-        font-size: 18px;
-        font-style: italic;
-        font-family: "Georgia, serif";
-      }
+    h1{
+      font-size: 40px;
+    }
 
-      #headline {
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding: 20px;
-        margin: 25px;
-        font-size: 40px;
-        text-transform: uppercase;
-      }
+    .headline {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      padding: 20px;
+      margin: 25px;
+      text-transform: uppercase;
+    }
 
-      .header-btn {
-        margin: 0 15px;
-        display: inline-block;
-        width: 30%
-      }
+    .header-btn {
+      // margin: 0 15px;
+      // display: inline-block;
+      // width: 30%
     }
   }
 }
@@ -139,5 +133,16 @@ div#main-content{
     margin: 0;
     padding: 100px 30px;
     background: white;
+  }
+}
+
+
+
+// custom media query styles
+@media (max-width: 768px) { 
+  #home {
+    #description-wrapper {
+      border:none;
+    }
   }
 }

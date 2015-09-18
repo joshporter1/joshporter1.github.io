@@ -1,11 +1,11 @@
-.btn-border {
+.btn-custom {
   border: 2px solid white;
+  border-radius: 0;
   color: white;
   font-size: 16px;
   font-weight: 200;
-  padding: 15px 25px;
   text-decoration: none; }
-  .btn-border:hover {
+  .btn-custom:hover {
     text-decoration: none;
     background: white;
     color: black;
@@ -14,7 +14,7 @@
     -ms-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
     -o-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
     transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out; }
-  .btn-border:active {
+  .btn-custom:active {
     text-decoration: none; }
 
 #navbar-brand {
@@ -63,32 +63,23 @@ nav.navbar-custom {
     background: rgba(0, 0, 0, 0.5); }
 
 #home #description-wrapper {
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 900px;
   color: white;
-  padding: 15% 0; }
-  #home #description-wrapper #description {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px  5px;
-    border: 2px solid white; }
-    #home #description-wrapper #description #sub-headline {
-      font-size: 18px;
-      font-style: italic;
-      font-family: "Georgia, serif"; }
-    #home #description-wrapper #description #headline {
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      padding: 20px;
-      margin: 25px;
-      font-size: 40px;
-      text-transform: uppercase; }
-    #home #description-wrapper #description .header-btn {
-      margin: 0 15px;
-      display: inline-block;
-      width: 30%; }
+  border: 2px solid white;
+  padding: 20px  5px;
+  margin-top: 10%;
+  margin-bottom: 10%; }
+  #home #description-wrapper #sub-headline {
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Georgia, serif"; }
+  #home #description-wrapper h1 {
+    font-size: 40px; }
+  #home #description-wrapper .headline {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    margin: 25px;
+    text-transform: uppercase; }
 
 div#main-content {
   padding: 0; }
@@ -96,3 +87,7 @@ div#main-content {
     margin: 0;
     padding: 100px 30px;
     background: white; }
+
+@media (max-width: 768px) {
+  #home #description-wrapper {
+    border: none; } }
