@@ -74,6 +74,12 @@ nav.navbar-custom {
   li.active > a {
     color: rgba(255,255,255,1);
   }
+
+  .navbar-toggle {
+    .icon-bar {
+      background-color: white;
+    }
+  }
 }
 
 // main header

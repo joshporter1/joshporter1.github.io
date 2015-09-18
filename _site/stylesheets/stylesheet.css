@@ -52,6 +52,8 @@ nav.navbar-custom {
       color: black; }
   nav.navbar-custom li.active > a {
     color: white; }
+  nav.navbar-custom .navbar-toggle .icon-bar {
+    background-color: white; }
 
 #main-header {
   background: url("/images/main.jpg") no-repeat center center fixed;
