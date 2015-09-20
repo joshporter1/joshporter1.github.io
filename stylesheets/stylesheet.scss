@@ -42,6 +42,10 @@
 nav.navbar-custom {
   margin-bottom: 0;
 
+  ul.navbar-right {
+    margin-right: 0;
+  }
+
   li {
     padding: 0;
     margin: 15px 15px 0 0;
@@ -64,7 +68,6 @@ nav.navbar-custom {
   }
   li:last-child {
     border: 2px solid white;
-    margin-right: 30px;
 
     a:hover {
      background: white;
