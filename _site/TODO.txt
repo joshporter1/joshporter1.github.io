@@ -1,6 +1,0 @@
-=== MISC
-- redo site without bootstrap
-
-=== Sections
-- make actual content
-- style section content after adding content
