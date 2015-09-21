@@ -11,6 +11,11 @@
   font-weight: 200;
   text-decoration: none;
 
+  &:active, &:visited {
+    text-decoration: none;
+    color: white;
+  }
+
   &:hover {
     text-decoration: none;
     background: white;
@@ -20,10 +25,6 @@
     -ms-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
     -o-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
     transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-  }
-
-  &:active {
-    text-decoration: none;
   }
 }
 
@@ -125,6 +126,10 @@ nav.navbar-custom {
       padding: 20px;
       margin: 25px;
       text-transform: uppercase;
+    }
+
+    .header-btn {
+      margin: 0 15px;
     }
   }
 }
