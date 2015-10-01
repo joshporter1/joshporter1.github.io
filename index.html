@@ -43,8 +43,8 @@
             <h1 class="headline hidden-sm hidden-xs">Ruby on Rails</h1>
             <h2 class="headline visible-sm-block">Ruby on Rails</h2>
             <h3 class="headline visible-xs-block">Ruby on Rails</h3>
-            <a href="#" class="btn btn-custom btn-lg header-btn">Resume</a>
-            <a href="#" class="btn btn-custom btn-lg header-btn">Contact</a>
+            <a href="#skills" class="btn btn-custom btn-lg header-btn">Resume</a>
+            <a href="#contact" class="btn btn-custom btn-lg header-btn">Contact</a>
           </div>
         </div>
       </div>
@@ -53,40 +53,78 @@
 
 
 
-  <div id="main-content">
-    <section class="page-section" id="about">
-      <h3>About</h3>
-      <p>
-        We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? Globally deep-diving proactively holistic synergies is crucial to our value-added emerging market.
-
-        Efficiencies will come from virtually strategizing our milestones. Our business offshores enterprises to conservatively and iteratively right-size our proactive driver. In the future, will you be able to dynamically impact bandwidths in your business? Key players will take ownership of their big datas by effectively monetizing best-of-breed paradigm shifts.
-      </p>
+  <div id="main-content" class="container text-center">
+    <section class="page-section row" id="about">
+      <h1>A brief background</h1>
+      <div class="col-lg-8 col-lg-offset-2">
+        <p>
+          My name's Josh Porter and I'm a software developer. I make data-driven web applications, comprehensive visualizations, and user-friendly interfaces. I work primarily with Ruby on Rails, but I can transition to another language or framework with ease. When I'm not writing code, I enjoy video games (Call of Duty, StarCraft II, among others), craft beer, and a fresh cup of coffee. 
+        </p>
+      </div>
     </section>
-    <section class="page-section" id="skills">
-      <h3>Skills</h3>
-      <p>
-        We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? Globally deep-diving proactively holistic synergies is crucial to our value-added emerging market.
 
-        Efficiencies will come from virtually strategizing our milestones. Our business offshores enterprises to conservatively and iteratively right-size our proactive driver. In the future, will you be able to dynamically impact bandwidths in your business? Key players will take ownership of their big datas by effectively monetizing best-of-breed paradigm shifts.
-      </p>
+    <section class="page-section" id="skills">
+      <h1>Skills</h1>
+      <pre class="text-left">
+        var skills = {
+          'Ruby': ['Rails'],
+          'Python': ['Flask'],
+          'PHP': ['CodeIgniter', 'Kohana'],
+          'JavaScript': ['jQuery', 'Highcharts', 'd3.js', 'three.js', 'Leaflet', 'Angular'],
+          'Datastores': {
+            'RDBMS': ['MySQL', 'Microsoft SQL Server', 'SQLite', 'Oracle'],
+            'NoSQL': ['MongoDB'],
+            'Search': ['Elasticsearch', 'Solr']
+          },
+          'VCS': ['Git', 'Subversion']
+          'Misc': ['HTML', 'CSS', 'WordPress', 'RabbitMQ']
+        }
+      </pre>
+      <div class="text-left">
+        <b>TODO: </b>
+        <ul>
+          <li>Turn skills into some sort of visualizations.</li>
+          <li>Add more skills/categories.</li>
+        </ul>
+      </div>
+      
     </section>
     <section class="page-section" id="projects">
-      <h3>Projects</h3>
-      <p>
-        We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? Globally deep-diving proactively holistic synergies is crucial to our value-added emerging market.
-
-        Efficiencies will come from virtually strategizing our milestones. Our business offshores enterprises to conservatively and iteratively right-size our proactive driver. In the future, will you be able to dynamically impact bandwidths in your business? Key players will take ownership of their big datas by effectively monetizing best-of-breed paradigm shifts.
-      </p>
-    </section>
-    <section class="page-section" id="contact">
-      <h3>Contact</h3>
-      <p>
-        We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? Globally deep-diving proactively holistic synergies is crucial to our value-added emerging market.
-
-        Efficiencies will come from virtually strategizing our milestones. Our business offshores enterprises to conservatively and iteratively right-size our proactive driver. In the future, will you be able to dynamically impact bandwidths in your business? Key players will take ownership of their big datas by effectively monetizing best-of-breed paradigm shifts.
-      </p>
+      <h1>Work Experience and Projects</h1>
+      <div class="row">
+        <div class="col-lg-3 project-item">
+          <p>INTC We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
+          </p>
+        </div>
+        <div class="col-lg-3 project-item">
+          <p>RTN We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
+          </p>
+        </div>
+        <div class="col-lg-3 project-item">
+          <p>DDC We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
+          </p>
+        </div>
+        <div class="col-lg-3 project-item">
+          <p>Projects We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
+          </p>
+        </div>
+        
+      </div>
     </section>
   </div>
+  <footer class="page-footer" id="contact">
+    <h1>Contact</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <p>
+          We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? Globally deep-diving proactively holistic synergies is crucial to our value-added emerging market.
+
+          Efficiencies will come from virtually strategizing our milestones. Our business offshores enterprises to conservatively and iteratively right-size our proactive driver. In the future, will you be able to dynamically impact bandwidths in your business? Key players will take ownership of their big datas by effectively monetizing best-of-breed paradigm shifts.
+        </p>
+        
+      </div>
+    </div>
+  </footer>
 
   <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
