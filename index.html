@@ -58,7 +58,7 @@
       <h1>A brief background</h1>
       <div class="col-lg-8 col-lg-offset-2">
         <p>
-          My name's Josh Porter and I'm a software developer. I make data-driven web applications, comprehensive visualizations, and user-friendly interfaces. I work primarily with Ruby on Rails, but I can transition to another language or framework with ease. When I'm not writing code, I enjoy video games (Call of Duty, StarCraft II, among others), craft beer, and a fresh cup of coffee. 
+          My name's Josh Porter and I'm a Baltimore-based software developer. I primarily make data-driven web applications, comprehensive visualizations, and user-friendly interfaces. My speciality is Ruby on Rails, but I can transition to another language or framework with ease. When not writing code, I enjoy video games (Call of Duty, StarCraft II, among others), craft beer, and a fresh cup of coffee. 
         </p>
       </div>
     </section>
@@ -66,20 +66,19 @@
     <section class="page-section" id="skills">
       <h1>Skills</h1>
       <pre class="text-left">
-        var skills = {
-          'Ruby': ['Rails'],
-          'Python': ['Flask'],
-          'PHP': ['CodeIgniter', 'Kohana'],
-          'JavaScript': ['jQuery', 'Highcharts', 'd3.js', 'three.js', 'Leaflet', 'Angular'],
-          'Datastores': {
-            'RDBMS': ['MySQL', 'Microsoft SQL Server', 'SQLite', 'Oracle'],
-            'NoSQL': ['MongoDB'],
-            'Search': ['Elasticsearch', 'Solr']
-          },
-          'VCS': ['Git', 'Subversion']
-          'Misc': ['HTML', 'CSS', 'WordPress', 'RabbitMQ']
-        }
-      </pre>
+var skills = {
+  'Ruby': ['Rails'],
+  'Python': ['Flask'],
+  'PHP': ['CodeIgniter', 'Kohana'],
+  'JavaScript': ['jQuery', 'Highcharts', 'd3.js', 'three.js', 'Leaflet', 'Angular'],
+  'Datastores': {
+    'RDBMS': ['MySQL', 'Microsoft SQL Server', 'SQLite', 'Oracle'],
+    'NoSQL': ['MongoDB'],
+    'Search': ['Elasticsearch', 'Solr']
+  },
+  'VCS': ['Git', 'Subversion']
+  'Misc': ['HTML', 'CSS', 'WordPress', 'RabbitMQ']
+}</pre>
       <div class="text-left">
         <b>TODO: </b>
         <ul>
@@ -92,38 +91,67 @@
     <section class="page-section" id="projects">
       <h1>Work Experience and Projects</h1>
       <div class="row">
-        <div class="col-lg-3 project-item">
-          <p>INTC We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
-          </p>
+        <div class="col-lg-3 col-sm-6 project-item">
+          <a href="#" class="custom-thumbnail">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Intel&w=250&h=250" alt="Intel">
+          </a>
         </div>
-        <div class="col-lg-3 project-item">
-          <p>RTN We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
-          </p>
+        <div class="col-lg-3 col-sm-6 project-item">
+          <a href="#" class="custom-thumbnail">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Raytheon&w=250&h=250" alt="Raytheon">
+          </a>
         </div>
-        <div class="col-lg-3 project-item">
-          <p>DDC We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
-          </p>
+        <div class="col-lg-3 col-sm-6 project-item">
+          <a href="#" class="custom-thumbnail">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=DDC&w=250&h=250" alt="DevelopDC">
+          </a>
         </div>
-        <div class="col-lg-3 project-item">
-          <p>Projects We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? 
-          </p>
+        <div class="col-lg-3 col-sm-6 project-item">
+          <a href="#" class="custom-thumbnail">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Projects&w=250&h=250" alt="Projects">
+          </a>
         </div>
         
       </div>
     </section>
   </div>
-  <footer class="page-footer" id="contact">
-    <h1>Contact</h1>
-    <div class="row">
-      <div class="col-lg-6">
-        <p>
-          We use our mobile best practices to reliably manage our ballpark figure expectations. Our team player development lifecycle enables end-to-end, mission critical diversities. Is your agile workflow prepared for customer-focused low hanging fruit growth? Globally deep-diving proactively holistic synergies is crucial to our value-added emerging market.
-
-          Efficiencies will come from virtually strategizing our milestones. Our business offshores enterprises to conservatively and iteratively right-size our proactive driver. In the future, will you be able to dynamically impact bandwidths in your business? Key players will take ownership of their big datas by effectively monetizing best-of-breed paradigm shifts.
-        </p>
-        
+  <section class="page-section" id="contact">
+    <div class="contact-content">
+      <h1 class="text-center">Contact</h1>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <form action="mailto:joshporter1@gmail.com?subject=Hey%20Josh...&body=Hey Josh, I meant to contact you but I forgot to input content!" method="POST" enctype="text/plain" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-xs-6">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+              </div>
+              <div class="col-xs-6">
+                <input type="email" class="form-control" name="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <textarea type="text" class="form-control" name="message" placeholder="Enter message..." rows="5"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-4 col-xs-offset-4">
+                <input type="submit" value="Send" class="btn btn-custom btn-block btn-lg">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+  </section>
+
+  <footer id="page-footer">
+    asjdkfl
   </footer>
 
   <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
