@@ -2,12 +2,12 @@
 ---
 
 // mixins
-@mixin background-cover($path) {
-  background-color: #000;
+@mixin background-cover($path, $color: #000, $attachment: fixed) {
+  background-color: $color;
   background-image: url($path);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: $attachment;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,11 +71,11 @@
     text-decoration: none;
     background: white;
     color: black;
-    -webkit-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    -moz-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    -ms-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    -o-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -webkit-transition: all .3s 0s ease-in-out,color .3s 0s ease-in-out;
+    -moz-transition: all .3s 0s ease-in-out,color .3s 0s ease-in-out;
+    -ms-transition: all .3s 0s ease-in-out,color .3s 0s ease-in-out;
+    -o-transition: all .3s 0s ease-in-out,color .3s 0s ease-in-out;
+    transition: all .3s 0s ease-in-out,color .3s 0s ease-in-out;
   }
 }
 
@@ -227,35 +227,56 @@ nav.navbar-custom {
 #projects {
   .project-item {
     margin-bottom: 10px;
+    height: 250px;
+    color: white;
+
+    .project-content-wrapper {
+      height: 100%;
+      overflow: hidden;
+      padding: 70px 0;
+      margin-top: -15px;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.4);
+      -webkit-transition: all .4s ease;
+      -moz-transition: all .4s ease;
+      -ms-transition: all .4s ease;
+      -o-transition: all .4s ease;
+      transition: all .4s ease;
+
+      .project-content {
+        position: relative;
+        top: -10px;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+      }
+    }
+    &:hover {
+      .project-content-wrapper {
+        opacity: 1;
+
+        .project-content {
+          top: 0;
+        }
+      }
+    }
+
     
     & > div {
       background-color: #777;
       &#project-intc {
-        background-color: #005493;
+        @include background-cover('/images/projects/intel.jpg', #005493, initial)
       }
       &#project-rtn {
-        background-color: #CA001E;
+        @include background-cover('/images/projects/rtn.jpg', #CA001E, initial)
       }
       &#project-ddc {
-        background-color: #05CB9C;
+        @include background-cover('/images/projects/ddc.jpg', #05CB9C, initial)
       }
-    }
-
-    a {
-      height: 250px;
-      overflow: hidden;
-      display: block;
-      color: transparent;
-      text-decoration: none;
-      -webkit-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-      -moz-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-      -ms-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-      -o-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-      transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
-
-      &:hover {
-        color: white;
-        background-color: rgba(0,0,0,0.5);
+      &#project-jp {
+        @include background-cover('/images/projects/projects.jpg', #05CB9C, initial)
       }
     }
   }
