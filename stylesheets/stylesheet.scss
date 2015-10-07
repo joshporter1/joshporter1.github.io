@@ -227,13 +227,9 @@ nav.navbar-custom {
 #projects {
   .project-item {
     margin-bottom: 10px;
-
-    a {
-      height: 250px;
-      overflow: hidden;
-      display: block;
+    
+    & > div {
       background-color: #777;
-
       &#project-intc {
         background-color: #005493;
       }
@@ -242,6 +238,24 @@ nav.navbar-custom {
       }
       &#project-ddc {
         background-color: #05CB9C;
+      }
+    }
+
+    a {
+      height: 250px;
+      overflow: hidden;
+      display: block;
+      color: transparent;
+      text-decoration: none;
+      -webkit-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+      -moz-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+      -ms-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+      -o-transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+      transition: all .1s 0s ease-in-out,color .1s 0s ease-in-out;
+
+      &:hover {
+        color: white;
+        background-color: rgba(0,0,0,0.5);
       }
     }
   }
