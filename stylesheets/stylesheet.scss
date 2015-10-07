@@ -142,10 +142,11 @@ nav.navbar-custom {
 
 #main-header {
   background-color: #000;
+  border-bottom: 10px solid #eee;
   position: relative;
 
   #main-header-image {
-    @include background-cover('/images/beach.jpg');
+    @include background-cover('/images/desk.jpg');
     @include fadein(2s, 250ms);
 
     opacity: 0;
@@ -226,6 +227,23 @@ nav.navbar-custom {
 #projects {
   .project-item {
     margin-bottom: 10px;
+
+    a {
+      height: 250px;
+      overflow: hidden;
+      display: block;
+      background-color: #777;
+
+      &#project-intc {
+        background-color: #005493;
+      }
+      &#project-rtn {
+        background-color: #CA001E;
+      }
+      &#project-ddc {
+        background-color: #05CB9C;
+      }
+    }
   }
 }
 
