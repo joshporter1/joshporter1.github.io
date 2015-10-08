@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header id="main-header">
+  <header id="home">
     <div id="main-header-image"></div>
     <div id="main-header-overlay"></div>
     <!-- main navbar -->
@@ -35,7 +35,7 @@
         </div>
     </nav>
     <div class="container-fluid">
-      <div id="home" class="row">
+      <div id="headline" class="row">
         <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 text-center" id="description-wrapper">
           <h4 id="sub-headline">Software developer with a passion for</h4>
           <h1 class="headline hidden-sm hidden-xs">Ruby on Rails</h1>
@@ -95,7 +95,7 @@ var skills = {
             <div class="project-content-wrapper">
               <div class="project-content">
                 <h2>Intel</h2>
-                <a href="#" class="btn btn-lg btn-custom">View Details</a>
+                <a href="#projects" class="btn btn-lg btn-custom" onclick="alert('Details page not yet created.')">View Details</a>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ var skills = {
             <div class="project-content-wrapper">
               <div class="project-content">
                 <h2>Raytheon</h2>
-                <a href="#" class="btn btn-lg btn-custom">View Details</a>
+                <a href="#projects" class="btn btn-lg btn-custom" onclick="alert('Details page not yet created.')">View Details</a>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ var skills = {
             <div class="project-content-wrapper">
               <div class="project-content">
                 <h2>DevelopDC</h2>
-                <a href="#" class="btn btn-lg btn-custom">View Details</a>
+                <a href="#projects" class="btn btn-lg btn-custom" onclick="alert('Details page not yet created.');">View Details</a>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ var skills = {
             <div class="project-content-wrapper">
               <div class="project-content">
                 <h2>Projects</h2>
-                <a href="#" class="btn btn-lg btn-custom">View Projects</a>
+                <a href="#projects" class="btn btn-lg btn-custom" onclick="alert('Details page not yet created.')">View Projects</a>
               </div>
             </div>
           </div>
@@ -173,12 +173,12 @@ var skills = {
   <div id="sub-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-md-offset-1 text-center">
+        <div class="col-md-7 col-md-offset-1 text-center">
           <h3 class="pull-left">Want to know more? Drop me a line...</h3>
-          <div class="pull-right">
-            <a href="mailto:joshporter1@gmail.com" class="btn btn-custom btn-lg">Email</a>
-            <a href="tel:+14102313397" class="btn btn-custom btn-lg">Phone</a>
-          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <a href="mailto:joshporter1@gmail.com" class="btn btn-custom btn-lg">Email</a>
+          <a href="tel:+14102313397" class="btn btn-custom btn-lg">Phone</a>
         </div>
       </div>
     </div>
@@ -188,16 +188,19 @@ var skills = {
     <div class="container-fluid text-center">
 
       <ul class="list-unstyled list-inline">
-        <li><a href="#main-header">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <small class="text-muted">&copy; <span id="copyright-date">2015</span> Joshua Porter. All rights reserved.</small>
     </div>
   </footer>
+
+  <!-- modals for projects -->
+
+
 
   <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>

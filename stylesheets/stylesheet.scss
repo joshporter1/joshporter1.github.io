@@ -140,7 +140,7 @@ nav.navbar-custom {
 
 // main header
 
-#main-header {
+#home {
   background-color: #000;
   border-bottom: 10px solid #eee;
   position: relative;
@@ -166,8 +166,8 @@ nav.navbar-custom {
   }
 }
 
-// home/banner section
-#home {
+// headline/banner section
+#headline {
   #description-wrapper {
     @include moveandfadein(1.5s, 1s);
 
@@ -234,7 +234,6 @@ nav.navbar-custom {
       height: 100%;
       overflow: hidden;
       padding: 70px 0;
-      margin-top: -15px;
       opacity: 0;
       background-color: rgba(0,0,0,0.4);
       -webkit-transition: all .4s ease;
@@ -368,7 +367,7 @@ nav.navbar-custom {
 
 // custom media query styles
 @media (max-width: 768px) {
-  #home {
+  #headline {
     #description-wrapper {
       border:none;
     }
