@@ -1,7 +1,10 @@
 ---
 ---
 
-// mixins
+/*
+* Mixins
+*/
+
 @mixin background-cover($path, $color: #000, $attachment: fixed) {
   background-color: $color;
   background-image: url($path);
@@ -41,6 +44,9 @@
   animation-delay: $delay;
 }
 
+/*
+* Custom page stuff
+*/
 
 ::selection {
   background: #333; /* WebKit Browsers */
@@ -51,7 +57,9 @@
   color: #fff;
 }
 
-// general
+/*
+* Custom bootstrap addons
+*/
 
 .btn-custom {
   border: 2px solid white;
@@ -79,7 +87,9 @@
   }
 }
 
-// navbar
+/*
+* Navbar
+*/
 
 #navbar-brand{
   color: white;
@@ -90,7 +100,6 @@
   font-weight: 100;
   line-height: 20px;
 }
-
 nav.navbar-custom {
   @include fadein(2s);
   margin-bottom: 0;
@@ -138,7 +147,9 @@ nav.navbar-custom {
   }
 }
 
-// main header
+/*
+* Header
+*/
 
 #home {
   background-color: #000;
@@ -166,7 +177,10 @@ nav.navbar-custom {
   }
 }
 
-// headline/banner section
+/*
+* Headline
+*/
+
 #headline {
   #description-wrapper {
     @include moveandfadein(1.5s, 1s);
@@ -223,6 +237,22 @@ nav.navbar-custom {
     }
   }
 }
+
+/*
+* Skills
+*/
+
+#skills {
+  #skills-container {
+    .btn {
+      margin: 0 10px 10px 0;
+    }
+  }
+}
+
+/*
+* Projects
+*/
 
 #projects {
   .project-item {
@@ -281,6 +311,9 @@ nav.navbar-custom {
   }
 }
 
+/*
+* Contact
+*/
 
 #contact {
   @include background-cover('/images/powerlines.jpg');
@@ -322,6 +355,10 @@ nav.navbar-custom {
     color: #666;
   }
 }
+
+/*
+* Footer
+*/
 
 #sub-footer {
   border-top: 15px solid #4D4B53;
