@@ -403,10 +403,22 @@ nav.navbar-custom {
 }
 
 // custom media query styles
-@media (max-width: 768px) {
+@media (max-width: 768px) { //col-sm
   #headline {
     #description-wrapper {
       border:none;
+    }
+  }
+
+  #projects {
+    .project-item {
+      .project-content-wrapper {
+        opacity: 1;
+
+        .project-content {
+          top: 0;
+        }
+      }
     }
   }
 }
