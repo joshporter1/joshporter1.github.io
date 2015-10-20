@@ -59,12 +59,12 @@
 * Keyframes
 */
 
-@include keyframes('moveandfadein') {
+@include keyframes(moveandfadein) {
   0%    { opacity: 0; transform: translateY(-10px); }
   100%  { opacity: 1; transform: translateY(0px); }
 }
 
-@include keyframes('fadein') {
+@include keyframes(fadein) {
   0%    { opacity: 0; }
   100%  { opacity: 1; }
 }
@@ -208,7 +208,7 @@ nav.navbar-custom {
 
 #headline {
   #description-wrapper {
-    @include moveandfadein(1.5s, 1s);
+    @include moveandfadein(2000ms, 1s);
 
     opacity: 0;
     color: white;
