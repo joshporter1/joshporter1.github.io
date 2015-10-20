@@ -1,9 +1,38 @@
 ---
 ---
 
-/*
-* Mixins
-*/
+@mixin keyframes($name) {
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -ms-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  animation-delay: $delay;     
+}
 
 @mixin background-cover($path, $color: #000, $attachment: fixed) {
   background-color: $color;
@@ -18,30 +47,26 @@
 }
 
 @mixin fadein($ms, $delay: 0s) {
-  -webkit-animation: fadein $ms forwards;
-  -moz-animation: fadein $ms forwards;
-  -ms-animation: fadein $ms forwards;
-  -o-animation: fadein $ms forwards;
-  animation: fadein $ms forwards;
-
-  -webkit-animation-delay: $delay;
-  -moz-animation-delay: $delay;
-  -ms-animation-delay: $delay;
-  -o-animation-delay: $delay;
-  animation-delay: $delay;
+  @include animation(fadein $ms forwards);
+  @include animation-delay($delay);
 }
 @mixin moveandfadein($ms, $delay: 0s) {
-  -webkit-animation: moveandfadein $ms forwards;
-  -moz-animation: moveandfadein $ms forwards;
-  -ms-animation: moveandfadein $ms forwards;
-  -o-animation: moveandfadein $ms forwards;
-  animation: moveandfadein $ms forwards;
+  @include animation(moveandfadein $ms forwards);
+  @include animation-delay($delay);
+}
 
-  -webkit-animation-delay: $delay;
-  -moz-animation-delay: $delay;
-  -ms-animation-delay: $delay;
-  -o-animation-delay: $delay;
-  animation-delay: $delay;
+/*
+* Keyframes
+*/
+
+@include keyframes('moveandfadein') {
+  0%    { opacity: 0; transform: translateY(-10px); }
+  100%  { opacity: 1; transform: translateY(0px); }
+}
+
+@include keyframes('fadein') {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
 }
 
 /*
@@ -421,64 +446,4 @@ nav.navbar-custom {
       }
     }
   }
-}
-
-
-// animations
-@keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
-}
-
-@keyframes moveandfadein {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100%   { opacity: 1; transform: translateY(0px); }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes moveandfadein {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100%   { opacity: 1; transform: translateY(0px); }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes moveandfadein {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100%   { opacity: 1; transform: translateY(0px); }
-}
-
-/* Internet Explorer */
-@-ms-keyframes moveandfadein {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100%   { opacity: 1; transform: translateY(0px); }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes moveandfadein {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100%   { opacity: 1; transform: translateY(0px); }
 }
