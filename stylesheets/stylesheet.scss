@@ -120,14 +120,18 @@
   color: white;
   border: 2px solid white;
   height: auto;
-  margin: 15px 5px 0 15px;
   font-size: 25px;
   font-weight: 100;
   line-height: 20px;
 }
+#navbar-wrapper {
+  width: 100%;
+  z-index: 999999;
+}
 nav.navbar-custom {
   @include fadein(2s);
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
 
   ul.navbar-right {
     margin-right: 0;
@@ -135,11 +139,12 @@ nav.navbar-custom {
 
   li {
     padding: 0;
-    margin: 15px 15px 0 0;
+    margin-left: 15px;
     font-weight: 200;
     font-size: 16px;
 
-    a {
+    a, a:active, a:link, a:visited {
+      background: transparent;
       color: rgba(255,255,255,.8);
       padding: 15px;
     }
