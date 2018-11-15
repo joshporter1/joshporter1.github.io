@@ -92,7 +92,7 @@
   color: white;
   background: transparent;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   text-decoration: none;
 
   &:active, &:visited, &:link {
@@ -121,7 +121,7 @@
   border: 2px solid white;
   height: auto;
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 20px;
 }
 #navbar-wrapper {
@@ -140,7 +140,7 @@ nav.navbar-custom {
   li {
     padding: 0;
     margin-left: 15px;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 16px;
 
     a, a:active, a:link, a:visited {
@@ -399,7 +399,7 @@ nav.navbar-custom {
   h3 {
     display: inline-block;
     margin-top: 10px;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   a{
@@ -411,7 +411,7 @@ nav.navbar-custom {
   padding: 50px 0;
   background-color: #26262a;
   color: white;
-  font-weight: 200;
+  font-weight: 400;
 
   ul > li{
     a{
